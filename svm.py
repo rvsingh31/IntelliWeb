@@ -28,6 +28,7 @@ def main():
     # df = pd.DataFrame(data, columns=['Class', 'text'])
     data = pd.read_csv("raw.csv")
     df = pd.DataFrame(data, columns=['text', 'Class'])
+    df = df[df['Class'].isin([1,3,4,5,6])]
     df['prc'] = df['text'].apply(process)
     df['prc_conct'] = df['prc'].apply(lambda tokens: ' '.join(str(v) for v in tokens))
     X_tfidf = Vectorization(df['prc_conct'])
@@ -55,7 +56,7 @@ def Vectorization(txt):
     X_tfidf = vectorizer.fit_transform(txt)
     return X_tfidf
 
-def c_matrix(y_true, y_pred, num_classes=7):
+def c_matrix(y_true, y_pred, num_classes=5):
     cm = confusion_matrix(y_true, y_pred)
     print(cm)
     cm_np = np.asarray(cm)
