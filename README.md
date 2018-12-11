@@ -3,6 +3,7 @@ IntelliWeb is a novel method of web page classification based on Natural Languag
 * Baseline classifier 1 : Naive Bayes - TF-IDF vectors
 * Baseline classifier 2 : Support Vector Machine - TF-IDF vectors
 * IntelliWeb : Deep Neural Network with Long Short-term Memory cells - GloVe vectors
+
 IntelliWeb is designed on [LSTM](https://www.mitpressjournals.org/doi/10.1162/neco.1997.9.8.1735) with [GloVe](https://nlp.stanford.edu/projects/glove/) embeddings. Following softwares are required to run this code.
 
 Softwares | Versions
