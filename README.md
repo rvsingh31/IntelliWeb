@@ -18,3 +18,7 @@ matplotlib | v3.0.1
 Keras | 2.2.4
 TensorFlow | 1.11.0
 GloVe | v1.2
+
+
+##Report
+You can find a detailed report [here.](./reports/1_Dec5_13_P08.pdf)
