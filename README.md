@@ -20,5 +20,5 @@ TensorFlow | 1.11.0
 GloVe | v1.2
 
 
-##Report
+## Report
 You can find a detailed report [here.](./reports/1_Dec5_13_P08.pdf)
